@@ -10,9 +10,18 @@
     display: grid;
     grid-template-columns: auto;
 }
+#grid_container.bgColor{
+    background-color: rgba(239, 250, 239, 0.5);
+}
 #grid_container #item1{
+    
     background-color: aqua;
 }
+/* #grid_container #item1 #overlay{
+    height:200px;
+    width:300px;
+    border: 2px solid red;
+} */
 
 #grid_container #item2 {
     background-color: lightgreen;
@@ -40,6 +49,12 @@
     font-size: 20px;
    
 }
+/* .fa-times {
+    color:rgb(0, 119, 255);
+    font-size: 28px;
+    padding-left: 20px;
+    cursor: pointer;
+} */
 #between_item1_item2 #link #cross{
     height: 25px;
     width:1px;
@@ -50,7 +65,7 @@
     transform:rotate(37deg);
     cursor: pointer;
 }
-#between_item1_item2 #link #cross::after{
+ #link #cross::after{
     content: "";
     height: 26px;
     width: 1px;
@@ -58,6 +73,127 @@
      position: absolute;
      left: -3px;;
      transform:rotate(102deg);
-     cursor: pointer;
-
+     cursor: pointer;} 
+ #overlay{
+        height:200px;
+        width:440px;
+        background-color: white;
+        position: relative;
+        top:-150px;
+        z-index: 1;
+        display: none;
+    } 
+    #overlay p{
+        color: rgb(0,0,0);
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+    }
+    #overlay #button1 {
+        height: 50px;
+        width:100px;
+        background-color: green;
+        color:white;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        margin:20px 20px 20px 60px;
+        cursor:pointer;
+    }
+    #overlay #button2 {
+        height: 50px;
+        width:100px;
+        background-color: red;
+        color:white;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-left:80px;
+        cursor: pointer;
+        
+    }
+    #overlay   #button1:hover {
+        background-color: rgb(15, 209, 15);
+    }
+    #overlay   #button2:hover {
+        background-color: rgb(247, 2, 2);
+    }
+/* }
+ #line{
+    background-color: white;
+    height: 75px;
+    width:75px;
+    position: relative;
+    top:-90px;
+    display: none;
+     border: 2px solid white;;
+    
+    
+} */
+/*#line::after{
+    border: 3px solid darkblue;
+    position: absolute;
+   width: 75px;
+   height: 2px;
+} */
+/* 
+#grid_container #item2   #between_item1_item2.decreaseHeightWidth{
+ animation: decreasing 10s ease 0s 1 forwards ;
+     
 }
+
+@keyframes decreasing {
+    0%{
+        width:393px;  
+        overflow: hidden;
+
+    }
+    20%{
+        width:350px;  
+        overflow: hidden; 
+    }
+    20%{
+        width:320px;  
+        overflow: hidden;  
+    }
+    30%{
+        width:300px;  
+        overflow: hidden;  
+    }
+    40%{
+        width:280px; 
+        overflow: hidden;   
+    }
+    50%{
+        width:250px; 
+        overflow: hidden;   
+    }
+    60%{
+        width:220px;  
+        overflow: hidden;         
+    }
+    70%{
+        width:180px;  
+        overflow: hidden;
+    }
+    80%{
+        width:150px;  color:white;
+        overflow: hidden;
+    }
+    90%{
+        width:125px;  
+        color:white;
+        overflow: hidden;
+    }
+    99% {
+        width:102px;  
+        color:white;
+        overflow: hidden;
+    }
+    100%{
+        width: 100px;
+        overflow: hidden;
+      
+    }
+    
+} */
